@@ -1,28 +1,30 @@
 h1{
     text-align: center;
-    color: #ffff;
-    
+    color:peru;   
+}
+h2{
+    text-align: center;
+    color:palevioletred;
 }
 .jumbotron{
-    background-image: url(../img/background.jpg);
+    
     background-attachment: fixed;
 }
 .well{
-    background-color: bisque;
+    background-color: grey;
 }
 .panel{
-    background-color: rgb(197, 134, 118);
-    background-image: linear-gradient(rgb(92, 68, 68), rgb(218, 240, 167));
+    background-color: brown;
     background-size: contain; 
     position: relative;
 }
 #fifth-p{
     visibility: hidden;
     background-color: burlywood;
-    height:300px;
+    height:400px;
 }
+
 #fifth-p p{
     text-align: center;
-    transform: translate(0%,190%);
-    font-size: 40px;
+    font-size: 50px;
 }
