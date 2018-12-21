@@ -21,49 +21,50 @@
                     <form id="Quiz" action="index.html" method="POST" name="Quiz">
                         <div class="well">
                             <p><strong> 1. Javascript is _________ language.</strong></p><br>
-                            <label><input type="radio" name="questionOne" id="mc" value="wrong">Application</label><br>
-                            <label><input type="radio" name="questionOne" id="mc" value="wrong">None of these</label><br>
-                            <label><input type="radio" name="questionOne" id="mc" value="wrong">Programming</label><br>
+                            <label><input type="radio" name="questionOne" id="mc" value="wrong" required>Application</label><br>
+                            <label><input type="radio" name="questionOne" id="mc" value="wrong" required>None of these</label><br>
+                            <label><input type="radio" name="questionOne" id="mc" value="wrong" required>Programming</label><br>
                             <label><input type="radio" name="questionOne" id="mc" value="correct" required>Scripting</label><br>
                         </div>
                         
                         <div class="well">
                             <p><strong> 2. JavaScript is ______ Side Scripting Language.</strong></p><br>
-                            <label><input type="radio" name="questionTwo" id="mc" value="wrong"></label>server<br>
-                            <label><input type="radio" name="questionTwo" id="mc" value="correct"></label>Browser<br>
-                            <label><input type="radio" name="questionTwo" id="mc" value="wrong">None of these</label><br>
-                            <label><input type="radio" name="questionTwo" id="mc" value="wrong">ISP</label><br>
+                            <label><input type="radio" name="questionTwo" id="mc" value="wrong" required></label>server<br>
+                            <label><input type="radio" name="questionTwo" id="mc" value="correct" required></label>Browser<br>
+                            <label><input type="radio" name="questionTwo" id="mc" value="wrong" required>None of these</label><br>
+                            <label><input type="radio" name="questionTwo" id="mc" value="wrong" required>ISP</label><br>
                         </div>
                         
                         <div class="well">
                             <p><strong> 3. JavaScript is designed for following purpose: </strong></p><br>
-                            <label><input type="radio" name="questionThree" id="mc" value="wrong">To style HTML pages</label><br>
-                            <label><input type="radio" name="questionThree" id="mc" value="correct">To add interactivity to HTML pages</label><br>
-                            <label><input type="radio" name="questionThree" id="mc" value="wrong">To execute query related to DB on server</label><br>
-                            <label><input type="radio" name="questionThree" id="mc" value="wrong">To perform server side scripting opertion</label><br>
+                            <label><input type="radio" name="questionThree" id="mc" value="wrong" required>To style HTML pages</label><br>
+                            <label><input type="radio" name="questionThree" id="mc" value="correct" required>To add interactivity to HTML pages</label><br>
+                            <label><input type="radio" name="questionThree" id="mc" value="wrong" required>To execute query related to DB on server</label><br>
+                            <label><input type="radio" name="questionThree" id="mc" value="wrong" required>To perform server side scripting opertion</label><br>
                         </div>
                         
                         <div class="well">
                             <p><strong> 4. Select Appropriate Option(s) :  JavaScript is can be written: </strong></p><br>
-                            <label><input type="radio" name="questionFour" id="mc" value="wrong">directly into html pages</label><br>
-                            <label><input type="radio" name="questionFour" id="mc" value="wrong">None of these</label><br>
-                            <label><input type="radio" name="questionFour" id="mc" value="wrong">directly on the Server Script</label><br>
-                            <label><input type="radio" name="questionFour" id="mc" value="correct">directly into JS file and included into HTML</label><br>
+                            <label><input type="radio" name="questionFour" id="mc" value="wrong" required>directly into html pages</label><br>
+                            <label><input type="radio" name="questionFour" id="mc" value="wrong" required>None of these</label><br>
+                            <label><input type="radio" name="questionFour" id="mc" value="wrong" required>directly on the Server Script</label><br>
+                            <label><input type="radio" name="questionFour" id="mc" value="correct" required>directly into JS file and included into HTML</label><br>
                         </div>
                         
                         <div class="well">
                             <p><strong> 5. JavaScript is an ________ language. </strong></p><br>
-                            <label><input type="radio" name="questionFive" id="mc" value="wrong">compiled</label><br>
-                            <label><input type="radio" name="questionFive" id="mc" value="correct">interpreted</label><br>
+                            <label><input type="radio" name="questionFive" id="mc" value="wrong" required>compiled</label><br>
+                            <label><input type="radio" name="questionFive" id="mc" value="correct" required>interpreted</label><br>
                         </div><br>
                         <input type="button" name="results" value="SUBMIT" id="button" class="btn btn-danger" onClick="check();">
                     </form>
             
         </div>
+    </div>
         <div id="fifth-p">
             <p id="correctNumber">HERE IS YOUR SCORE:</p>
         </div>   
-    </div>
+    
             
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
         <script src="script.js"></script>   
