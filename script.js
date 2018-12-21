@@ -6,15 +6,17 @@ function check() {
     var questionFive = document.Quiz.questionFive.value;
     var right = 0;
     if (questionOne == "correct") {
-        right = right + 5;}
+        right = right + 4;}
+    if (questionTwo == "correct") {
+        right = right + 4;}
     if (questionThree == "correct") {
-        right = right + 5;
-    
-    
-
+        right = right + 4;}
+    if (questionFour == "correct") {
+        right = right + 4;}
+    if (questionFive == "correct") {
+        right = right + 4;} 
     };
     document.getElementById("fifth-p").style.visibility = "visible";
-    document.getElementById("correctNumber").innerHTML = "HERE IS YOUR SCORE: " + right + "/50";
+    document.getElementById("correctNumber").innerHTML = "HERE IS YOUR SCORE: " + right + "/20";
     $(".container").fadeOut();
-
 };
