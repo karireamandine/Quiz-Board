@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Quiz Board</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,62 +10,64 @@
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+        <script src="script.js"></script>   
     </head>
+    
     <body>
         <div class="container">
-            <div class="jmbotton">
-                <h1>Quiz Board</h1>
+            <div class="jmbotron">
+                <div class="panel panel-info">
+                    <h1>Quiz Board</h1>
+                </div>
+                <br>
+                <h2><em>All questions are compulsory.</em></h2>
                     <div class="well">
                         <form id="Quiz" action="index.html" method="POST" name="Quiz">
                             <p><strong> 1. Javascript is _________ language.</strong></p><br>
                                 <input type="radio" name="questionOne" id="mc" value="wrong">Application<br>
-                                <input type="radio" name="questionOne" id="mc" value="correct">None of these<br>
+                                <input type="radio" name="questionOne" id="mc" value="wrong">None of these<br>
                                 <input type="radio" name="questionOne" id="mc" value="wrong">Programming<br>
-                                <input type="radio" name="questionOne" id="mc" value="wrong">Scripting<br>
-                        </form>
+                                <input type="radio" name="questionOne" id="mc" value="correct" required>Scripting<br>
                     </div>
             
                     <div class="well">
-                        <form id="Quiz" action="index.html" method="POST" name="Quiz">
                             <p><strong> 2. JavaScript is ______ Side Scripting Language.</strong></p><br>
-                                <input type="radio" name="questionOne" id="mc" value="wrong">server<br>
-                                <input type="radio" name="questionOne" id="mc" value="correct">Browser<br>
-                                <input type="radio" name="questionOne" id="mc" value="wrong">None of these<br>
-                                <input type="radio" name="questionOne" id="mc" value="wrong">ISP<br>
-                        </form>
+                                <input type="radio" name="questionTwo" id="mc" value="wrong">server<br>
+                                <input type="radio" name="questionTwo" id="mc" value="correct">Browser<br>
+                                <input type="radio" name="questionTwo" id="mc" value="wrong">None of these<br>
+                                <input type="radio" name="questionTwo" id="mc" value="wrong">ISP<br>
                     </div>
 
                     <div class="well">
-                        <form id="Quiz" action="index.html" method="POST" name="Quiz">
-                            <p><strong> 3. JavaScript is designed for following purpose: </strong></p><br>
-                                <input type="radio" name="questionOne" id="mc" value="wrong">To style HTML pages<br>
-                                <input type="radio" name="questionOne" id="mc" value="correct">To add interactivity to HTML pages<br>
-                                <input type="radio" name="questionOne" id="mc" value="wrong">To execute query related to DB on server<br>
-                                <input type="radio" name="questionOne" id="mc" value="wrong">To perform server side scripting opertion<br>
-                        </form>
+                        <p><strong> 3. JavaScript is designed for following purpose: </strong></p><br>
+                                <input type="radio" name="questionThree" id="mc" value="wrong">To style HTML pages<br>
+                                <input type="radio" name="questionThree" id="mc" value="correct">To add interactivity to HTML pages<br>
+                                <input type="radio" name="questionThree" id="mc" value="wrong">To execute query related to DB on server<br>
+                                <input type="radio" name="questionThree" id="mc" value="wrong">To perform server side scripting opertion<br>
                     </div>
     
                     <div class="well">
-                        <form id="Quiz" action="index.html" method="POST" name="Quiz">
-                            <p><strong> 4. Select Appropriate Option(s) :  JavaScript is can be written: </strong></p><br>
-                                <input type="radio" name="questionOne" id="mc" value="wrong">directly into html pages<br>
-                                <input type="radio" name="questionOne" id="mc" value="correct">None of these<br>
-                                <input type="radio" name="questionOne" id="mc" value="wrong">directly on the Server Script<br>
-                                <input type="radio" name="questionOne" id="mc" value="wrong">directly into JS file and included into HTML<br>
-                        </form>
-                        
-                    <div class="well">
-                        <form id="Quiz" action="index.html" method="POST" name="Quiz">
-                            <p><strong> 5. JavaScript is an ________ language. </strong></p><br>
-                                <input type="radio" name="questionOne" id="mc" value="wrong">compiled<br>
-                                <input type="radio" name="questionOne" id="mc" value="correct">interpreted<br>
-                        </form> 
+                        <p><strong> 4. Select Appropriate Option(s) :  JavaScript is can be written: </strong></p><br>
+                                <input type="radio" name="questionFour" id="mc" value="wrong">directly into html pages<br>
+                                <input type="radio" name="questionFour" id="mc" value="wrong">None of these<br>
+                                <input type="radio" name="questionFour" id="mc" value="wrong">directly on the Server Script<br>
+                                <input type="radio" name="questionFour" id="mc" value="correct">directly into JS file and included into HTML<br>
                     </div>
-                         
-    
-        
+
+                    <div class="well">
+                        <p><strong> 5. JavaScript is an ________ language. </strong></p><br>
+                                <input type="radio" name="questionFive" id="mc" value="wrong">compiled<br>
+                                <input type="radio" name="questionFive" id="mc" value="correct">interpreted<br>
+                    </div>
+                    <input type="button" name="results" value="SUBMIT" id="button" class="btn btn-danger" onClick="check();">
+                    </form>
+            </div>
+                <div id="fifth-p">
+                    <p id="correctNumber">HERE IS YOUR SCORE:</p>
                 </div>
-             
-            </body>
-        </html>
+                    
+        </div>
+        
+    </body>
+</html>
